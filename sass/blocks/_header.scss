@@ -1,0 +1,161 @@
+.header
+{
+    background-color: $primary-color;
+    .container
+    {
+        @include tablet
+        {
+            padding: 0;
+        }
+    }
+}
+
+.clearfix:after
+{
+    display: table;
+    clear: both;
+    overflow: hidden;
+
+    content: '';
+}
+.logo
+{
+    float: left;
+
+    width: 71px;
+    height: 62px;
+    padding: 44px;
+
+    background-color: $accent-color;
+
+    @include tablet
+    {
+        width: 46px;
+        height: 46px;
+        padding: 27px;
+    }
+    @include mobile
+    {
+        display: none;
+    }
+}
+
+.logo-img
+{
+    width: 71px;
+    height: 62px;
+
+    background-image: url(../images/design/roll.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+
+    @include tablet
+    {
+        width: 46px;
+        height: 46px;
+    }
+    @include mobile
+    {
+        display: none;
+    }
+}
+
+.menu
+{
+    text-align: right;
+}
+
+
+.menu-item
+{
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 148px;
+
+    display: inline-block;
+
+    margin-right: 40px;
+
+    text-decoration: none;
+
+    color: white;
+    border-top: 2px solid transparent;
+    
+    @include desktop-large
+    {
+        &:not(.fa-icon):hover
+        {
+            color: #ffa820;
+            border-top: 2px solid $accent-color;
+        }
+    }
+
+    @include desktop
+    {
+        &:not(.fa-icon):hover
+        {
+            color: #ffa820;
+            border-top: 2px solid $accent-color;
+        }
+    }
+    @include tablet
+    {
+        line-height: 100px;
+
+        margin-right: 10px;
+
+        border: none;
+    }
+    @include mobile
+    {
+        line-height: 50px;
+
+        display: block;
+
+        margin: 0;
+
+        text-align: center;
+    }
+    &.fa-icon
+    {
+        line-height: 50px;
+
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+
+        vertical-align: middle;
+
+        background-color: $accent-color;
+
+        @include mobile
+        {
+            width: auto;
+
+            background: none;
+        }
+    }
+    span
+    {
+        display: none;
+
+        @include mobile
+        {
+            display: block;
+        }
+    }
+}
+
+
+
+.fa-search
+{
+    padding: 18px;
+
+    @include mobile
+    {
+        display: none;
+    }
+}

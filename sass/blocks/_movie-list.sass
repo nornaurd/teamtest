@@ -1,0 +1,163 @@
+.movie-list
+	font-size: 0
+	margin: 0 -15px
+	text-align: center
+
+.movie-item
+	width: 22.5%
+	padding: 1.25%
+	display: inline-block
+	color: #25254e
+	font-size: 20px
+	font-family: $base-font
+	vertical-align: top
+	@include tablet
+		width: 30.8%
+	@include mobile
+		width: 47.5%
+
+
+.movie-img 
+	width: 100%
+	padding-top: 100%
+	background-size: contain
+	background-position: 50%
+	position: relative
+	.tag
+		display: none
+		font-size: 13px
+	@include desktop
+		.fa-icon
+			width: 40px
+			height: 40px
+			line-height: 40px
+			margin: 30% auto 5%
+		.tags
+			color: #ccc 
+		&:hover .tag
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+		&:hover:before
+		    position: absolute
+		    top: 0
+		    right: 0
+		    bottom: 0
+		    left: 0
+		    content: ''
+		    background-color: $primary-color
+		    opacity: 0.8;
+	@include desktop-large
+		.fa-icon
+			width: 40px
+			height: 40px
+			line-height: 40px
+			margin: 30% auto 5%
+		.tags
+			color: #ccc 
+		&:hover .tag
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+		&:hover:before
+		    position: absolute
+		    top: 0
+		    right: 0
+		    bottom: 0
+		    left: 0
+		    content: ''
+		    background-color: $primary-color
+		    opacity: 0.8;
+		
+
+.movie-item--lucy
+	.movie-img
+		background-image: url(../images/movie-img--lucy.png) 
+
+.movie-item--spiderman
+	.movie-img
+		background-image: url(../images/movie-img--spiderman.png) 
+
+.movie-item--divergent
+	.movie-img
+		background-image: url(../images/movie-img--divergent.png) 
+	
+.movie-item--hunger-games
+	.movie-img
+		background-image: url(../images/movie-img--hunger-games.png) 
+	
+.movie-title
+	margin-top: 14px
+	line-height: 29px
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
+	text-align: left
+
+.movie-rating
+	unicode-bidi: bidi-override
+	direction: rtl
+	line-height: 20px
+	margin-bottom: 13px
+	text-align: left
+  	
+	> .fa
+		display: inline-block
+		position: relative
+		font-size: 13px
+		color: #CCC 
+	  	
+		&:hover
+			&:before, ~ .fa:before 
+				color: $accent-color 
+
+.movie-info
+	&:after
+		content: "" 
+		clear: both
+		display: table
+		overflow: hidden
+	
+.movie-price
+	float: left
+	font-size: 30px
+	
+	del
+		color: #ccc
+		font-size: 20px
+		vertical-align: middle
+		
+.movie-quality
+	font-size: 0
+	width: 50%
+	float: right
+	text-align: right
+	margin-right: -2.5px
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
+	
+.movie-quality--item
+	font-size: 12px
+	margin: 0 2px
+	padding: 10px 6px
+	background-color: $accent-color--secondary 
+	display: inline-block
+	color: #FFF
+	
+.movie-buy
+	background-color: $accent-color
+	font-size: 15px
+	text-align: center
+	padding: 18px
+	margin-top: 24px
+	cursor: pointer
+	.fa
+		padding-right: 13px
+	

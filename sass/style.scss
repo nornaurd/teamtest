@@ -1,0 +1,22 @@
+@import "core/_reset.scss";
+@import "core/_variables.scss";
+@import "core/_mixin.scss";
+
+@import "_base.scss";
+@import "_icon.scss";
+@import "fa/_font-awesome.scss";
+@import "../fonts/font.sass";
+
+@import "_layout.scss";
+// @import "blocks/_index.scss";
+@import "blocks/_preview.sass";
+@import "blocks/filter.sass";
+@import "blocks/_movie-list.sass";
+@import "blocks/_movie-cast.scss";
+
+@import "components/_button.scss";
+@import "blocks/_header.scss";
+@import "fa/_font-awesome.scss";
+@import "../fonts/font.sass";
+@import "blocks/_contact-us.scss";
+@import "blocks/_footer.scss"

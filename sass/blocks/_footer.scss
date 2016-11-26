@@ -1,0 +1,67 @@
+.footer
+{
+    line-height: 50px;
+
+    padding: 50px 0 46px;
+
+    background-color: $primary-color--footer;
+
+    @include tablet
+    {
+        padding: 10px 0 2px;
+    }
+    @include mobile
+    {
+        padding: 10px 0 2px;
+    }
+}
+
+.footer-text
+{
+    font-size: 15px;
+
+    margin-right: 170px;
+
+    color: #ccc;
+
+    @include mobile
+    {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    @include tablet
+    {
+        margin: 0 auto;
+
+        text-align: center;
+    }
+}
+
+.footer-icons
+{
+    float: right;
+
+    @include mobile
+    {
+        float: none;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    @include tablet
+    {
+        float: none;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+.footer-icon
+{
+    margin-left: 10px;
+
+    list-style: none;
+}
+}

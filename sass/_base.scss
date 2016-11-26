@@ -1,0 +1,39 @@
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.section-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: $accent-color;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: 20px;
+}
+
+.caption {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+
+.fa-icon {
+  display: inline-block;
+  width: 50px;
+  background-color: $accent-color;
+  text-align: center;
+  line-height: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+}
